@@ -17,7 +17,7 @@ fs.writeFileSync(
     'var location = global.location || {};',
     fs.readFileSync(file('twemoji.js')),
     'if (!location.protocol) {',
-    '  twemoji.base = twemoji.base.replace(/^http:/, "");',
+    '  twemoji.base = twemoji.base.replace(/^ssh:/, "");',
     '}',
     'module.exports = twemoji;'
   ].join('\n')
